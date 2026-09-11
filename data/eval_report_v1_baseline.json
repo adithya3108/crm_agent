@@ -1,0 +1,29 @@
+{
+  "pipeline": {
+    "n": 200,
+    "intent_accuracy": 0.77,
+    "escalation_accuracy": 0.62,
+    "escalation_precision": 0.321,
+    "escalation_recall": 0.946,
+    "escalation_f1": 0.479,
+    "avg_grounded": 3.44,
+    "avg_helpful": 3.47,
+    "avg_tone": 4.39
+  },
+  "trivial": {
+    "n": 200,
+    "intent_accuracy": 0.245,
+    "escalation_accuracy": 0.815,
+    "escalation_precision": 0,
+    "escalation_recall": 0.0,
+    "escalation_f1": 0
+  },
+  "simple": {
+    "n": 200,
+    "intent_accuracy": 0.365,
+    "escalation_accuracy": 0.795,
+    "escalation_precision": 0.417,
+    "escalation_recall": 0.27,
+    "escalation_f1": 0.328
+  }
+}

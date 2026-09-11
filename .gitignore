@@ -1,0 +1,10 @@
+.env
+data/twcs.csv
+data/xbox_threads.jsonl
+data/retrieval_index.pkl
+data/*.index
+scratch/
+__pycache__/
+*.pyc
+.venv/
+venv/

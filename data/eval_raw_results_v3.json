@@ -1,0 +1,4808 @@
+{
+  "pipeline": [
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We're sorry to hear this! Can you let us know which game is crashing and if you're seeing any error messages? We'd like to help troubleshoot this further. ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Sorry to hear that! Let's try an offline system update. You'll need a USB drive and a PC to download the files here: https://support.xbox.com/help/hardware-network/console/system-update-solution/offline-system-update ^TC",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! We'd like to help you out with this. Can you send us a DM with more details about what's happening with your console? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Hi there! We don't have a timeline to share for Cortana availability in Australia at this time. We recommend submitting feedback here so the team can track demand: https://t.co/bKaMp0HcbU ^RK",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hey there! Final Fantasy XIV is available on Xbox Series X|S and Xbox One. You can find it in the Microsoft Store. If you need help getting started or have questions about setup, we're here to help! ^JL",
+      "judge": {
+        "grounded": 1,
+        "helpful": 1,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Let's try a power cycle on your console. Hold the power button for 10 seconds, unplug for 30 seconds, then restart. Does that help? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We understand. For enforcement issues, please visit https://enforcement.xbox.com to review your case and submit an appeal if available. Our team there can provide specific details about your account status. ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] We'd be happy to help! Can you let us know what issue you're experiencing with your Xbox? ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] That's odd! Try a hard reset by holding the power button for 10 seconds, then unplug for 30 seconds. If that doesn't help, check for any pending updates in Queue. Let us know! ^MT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Sorry to hear you're having trouble with the SmartGlass app! Let's look into this. Can you DM us the following details?\n• Gamertag:\n• Device/OS running SmartGlass:\n• App version:\nWe'll help get this sorted. ^MT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! We want to make sure you have the best experience. Can you provide more details about what you're seeing so we can better assist? ^JM",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! We'd be happy to help you get signed in. Can you DM us with more details about what's happening when you try to sign up? Follow us so we can assist further. ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "achievements_rewards",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Thanks for your patience. Let's get a support case started so our team can look into this further for you: https://support.xbox.com/contact-us ^XS",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hey there! We'd be happy to help figure out what's going on. Can you send us a DM with more details about what you're experiencing? ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! Sorry to hear about the tank controls in Destiny 2. This sounds like a game-specific issue. We'd recommend reaching out to @BungieHelp for assistance, as they can best help with in-game mechanics and issues. ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] We'd like to help! Can you let us know what you were doing when you got this error? Also, a screenshot would be helpful if possible. ^JM",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! Since you pre-ordered digitally from the Microsoft Store, your bonuses should be included automatically. Can you check your in-game mailbox or bonus content section? If still missing, let us know and we'll investigate further. ^JM",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Sorry to hear you're having trouble launching your game! Let's sort this out. Can you try a hard reset? Hold the power button for 10 seconds, wait 30 seconds, then power back on. Let us know if that helps! ^[Initials]",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@Customer Hi there! The QR code feature for downloading games was discontinued a few years ago. You can now download games directly from the Microsoft Store on your console or through the Xbox app on your phone. Let us know if you need help with that! ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Unfortunately, you can't downgrade to a previous update. You can report issues through the Xbox Insider Hub or unenroll from the preview program in settings, though it may take time to revert. What issues are you experiencing? ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@[username] That's great to hear! Glad our support team could help you out. Feel free to reach out if you need anything else. ^JM\"",
+      "judge": {
+        "grounded": 5,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@116540 That's correct, you wouldn't be able to play the same Ultimate Team simultaneously. Each account has its own separate Ultimate Team progress and can't be shared between profiles ^JS",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Sorry to hear your saves disappeared again. This could be a cloud sync issue. Can you try these steps: https://t.co/gkUZGxQyu2 and let us know if the saves return? Also, are you using the same profile each time? ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@115890 Hi! Sorry to hear about the left sticks on both controllers. Let's look into your options here: https://t.co/Vn3A1tUrw6 You can check warranty status and start a service order if eligible. ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] We're sorry to hear this. Please report this user through your console or at https://t.co/enforcement so our team can review. We take these reports seriously. ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Awesome! Happy to help. Let us know if you need anything else. ^JM",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@User We're sorry to hear that. We'd like to help make things right. Can you DM us more details about what happened so we can assist you? ^TC",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@user Hi there! Happy to help with any billing or subscription questions you have for the Puerto Rico region. Can you provide more details about what you need assistance with? ^BZ",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hey there! Sorry to hear about the connection trouble. Let's try these steps: Go to Settings > Network > Network settings > Advanced settings > Alternate MAC address > Clear. Then restart your console. If that doesn't help, please DM us your gamertag and we'll dig deeper. ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Sorry to hear about the disconnects! Since this is happening with Destiny 2 specifically, we'd recommend reaching out to @BungieHelp as they can best assist with in-game connection issues. You can also check https://t.co/[BungieHelpLink] for any known issues. ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@115786 Hi there! We understand your frustration and want to help. Can you send us a DM with your gamertag and a description of the error message you're seeing? We'll get this sorted out. ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "howto_general",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@115786 Thanks for trying those steps! Since the website didn't work either, let's have you reach out to our chat support here: https://t.co/aWWrMN54Vu so they can look into your account and get this sorted out for you. ^RR\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Glad to hear it's working now! Sometimes it just needs a moment. Feel free to reach out if you need anything else. ^JL",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hi there! We'd be happy to help. Can you follow us back & DM with more details about what's going on? ^JL",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We understand that can be frustrating. You can block the user to prevent them from joining parties you're in. For enforcement actions, please review the details at https://enforcement.xbox.com. If you need more help, feel free to DM us. ^[initials]",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@NewCustomer Hi there! Pre-orders typically unlock at the game's official release time. Can you let us know which title you pre-ordered so we can look into this further? ^BL",
+      "judge": {
+        "grounded": 3,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@356711 Hey! Sorry to hear that. Let's try a full power cycle - hold the power button for 10 secs, unplug for 5 mins, then restart and check. If it still doesn't show, reach out to us via https://support.xbox.com so we can look into this further! ^MT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] Sorry to hear that didn't help. Let's get you in touch with our team for further assistance here: https://support.xbox.com/contact-us They'll be able to dig deeper into this with you. ^MT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@2721 Hi! Let's try some steps to fix this. First, go to Settings > Account > Privacy & online safety > Xbox Live privacy > View details & customize > Communication & multiplayer and make sure everything is set to allow. Then test your headset in party chat again. Let us know if this helps! ^AJ",
+      "judge": {
+        "grounded": 2,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We're sorry to hear you're having trouble accessing your game. We'd like to look into this for you. Can you follow us and send a DM with your gamertag and details about what happened? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hey there! Sorry to hear that. Let's try these steps to get you back up and running: https://t.co/Og2kTw8nrU. If the issue continues after that, send us a DM with your gamertag so we can look into this further. ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! You shouldn't need an internet connection to watch a DVD. If you're seeing a prompt, it may be related to an app update or initial setup. Try going offline in network settings, then launch the Blu-ray Player app to play your DVD. Let us know if that helps! ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@NewCustomer Thanks for reaching out! Let's try a hard reset by holding the power button for 10 seconds, then unplug for 30 seconds: https://t.co/QENEhDawC3. If it continues, let us know which game is crashing. ^RR",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hi there! We'd be happy to help. Can you let us know what's going on so we can point you in the right direction? ^XS",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@User Happy to help! Let us know if you need anything else. ^JL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@666630 Thanks for clarifying! To help troubleshoot, can you let us know which game this is for and if you're able to see the map in your game's content/add-ons section? ^CO",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hi there! Yes, you can manage this through Manage game & add-ons. Select the game, go to Manage game & add-ons, then uncheck the 4K assets to free up space while keeping the base game installed. ^JM",
+      "judge": {
+        "grounded": 1,
+        "helpful": 1,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Hi there! We'd like to help sort this out. Can you send us a direct message with more details about what's happening with your subscription? ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! Great question! Yes, the system will let you know if your image doesn't meet the requirements and won't allow it to be uploaded. You'll get a chance to pick a different one 👍 ^[Agent Initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@Customer Thanks for the feedback! We'd love to hear more about what you'd like to see on our feedback forums: https://xbox.uservoice.com ^JL\"",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] Hey there! Sorry to hear you're having trouble signing in. Let's get this sorted out. Can you let us know what happens when you try to sign in? Any error messages or codes? We're here to help! ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! Let's help you get signed in. Can you send us a DM with your Gamertag and what's happening when you try to sign in? Any error messages? ^JL",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! Sorry to hear you're still having trouble accessing Xbox Live. Can you DM us your Gamertag so we can take a closer look at what's going on? ^BZ",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@User You're welcome! Let us know if you need anything else. ^AK",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Thanks for clarifying! Since it's isolated to Halo Wars 2, let's try uninstalling and reinstalling the game. Also, please check if there are any pending system updates. Keep us posted on how it goes! ^[initials]",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[User] Hey there! We understand the frustration. The NFL team is aware and working on a fix for the app. We're not able to offer compensation, but you can reach out to the NFL or app developer directly about that. ^XS",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] You'll need to sign in to your Microsoft account at https://social.xbox.com/changegamertag to change your gamertag. Make sure you're using the account associated with your Xbox profile. Let us know if you need help! ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Sorry to hear about the controller troubles! Let's try a few things: 1) Update the controller firmware via the Xbox Accessories app, 2) Re-pair the Bluetooth connection, 3) Try a USB cable connection to test. Are you using fresh batteries or is it fully charged? ^MT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] We're here to help! Can you give us a few more details about what's going on? ^JL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] That's awesome! Hope you have a great time gaming when you get there! Let us know if you need anything. ^JC",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@Customer We'd like to help look into this with you. Can you send us a DM with your gamertag and let us know when you first noticed this happening? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Sorry to hear that! Since you've already reset the console, let's try a network reset. Unplug your console and router/modem for 5 minutes, then power everything back on. Let us know if this helps! ^TC",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@582533 That's great to hear! Enjoy the stunning visuals. 🎮 ^JL\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Thanks for trying that! This can happen when the license needs to refresh. Try Settings > System > Console info > Reset console (keep games & apps). This should sort it out! ^BL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Thanks for reaching out! We're unable to view the image. Can you describe what's happening so we can better assist you? ^RK",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@[username] We'd like to help! What payment method are you trying to use? Also, what country/region is your account set to? You can check this in Settings > System > Language & location. ^JT\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Let's try a full power cycle by holding the power button for 10 seconds, then unplug for 30 seconds. If that doesn't help, let's get you connected with our support team here: https://t.co/XJOdrwpuSt so we can dig deeper. ^MK",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] Hey there! We want to help out. Can you let us know what you need assistance with? Feel free to DM us more details. ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 1,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] You're welcome! Glad you got it sorted. Don't hesitate to reach out if you need anything else. ^JM",
+      "judge": {
+        "grounded": 5,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] That's frustrating! Let's sort this out. Can you DM us your gamertag so we can take a closer look at your account and purchase history? https://t.co/nPX1yNXCi5 ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Sorry to hear you're running into a bug! Can you DM us with more details about what's happening when you're on the PvP server? We'll take a look. ^JM",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@291093 Hey there! We're not seeing any widespread service issues at the moment. Can you let us know what's happening when you try to connect? In the meantime, you can always check https://t.co/ServiceStatus for real-time updates. ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] If no enforcement is showing, it may have expired or been lifted. Case reviews are only available while an active suspension is in place. Can you confirm if you're still suspended when trying to sign in? ^MT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@[username] Hi there! Sorry to hear you're having trouble with your purchase. Can you let us know what error code you're seeing? In the meantime, try the steps here: https://t.co/XboxSupportLink to help resolve common purchase errors. ^JT\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] We're sorry to hear you're having trouble with your Elite controller. That's definitely not the experience we want. Let's get you sorted - please DM us your details so we can look into options for you. ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@117331 Hey there! We don't have any info to share on that just yet, but keep an eye on https://www.xbox.com/en-GB for the latest bundle announcements in your region. ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Sorry to hear that! Are you getting an error message when trying to sign in? Send us a DM with more details so we can help you out. ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@User You're welcome! Let us know if you need anything else. ^AZ",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] You can set one console as your Home Xbox to share digital licenses, while your account can sign in on any console. Only one console can be set as Home at a time. Here's how to manage it: https://support.xbox.com/help/hardware-network/console/my-home-xbox ^JL",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@Customer That's awesome! Hope you have a fantastic time playing it! ^RR",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey! Let's get this sorted out. Can you check your TV & display options under Settings > Display & sound > Video output to ensure 4K is enabled? Also verify your HDMI cable supports 4K. If issues persist, check out our troubleshooting guide here: https://t.co/5YET6VY9ob ^JR",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! We'd like to look into this with you. Can you send us a direct message with more details about what you're experiencing? Here to help! ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We're sorry to hear about the crashes! That's definitely not the experience we want you to have. Can you send us a DM: https://t.co/nPX1yNXCi5 with your gamertag and Windows version so we can look into this with you? We'd also be happy to check on that file size info. ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! We'd be happy to help. Can you provide more details about the issue you're experiencing with your Xbox One? ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] Sorry to hear Crunchyroll is still giving you trouble! Let's get this sorted. Can you DM us your Gamertag and what troubleshooting steps you've tried so far? We'll dig into this with you. ^JL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] The same steps apply! Your settings and games will transfer over smoothly. Let us know if you need any help with the process. ^JL",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] We understand your concern about the enforcement action. For details about your case and to submit a review if needed, please visit: https://enforcement.xbox.com ^JL",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@SpliffChef Thanks for reaching out! Can you provide us with more details about what's happening so we can better assist you? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@438878 Thanks for trying that. Let's have you power cycle your console by holding the power button for 10 seconds, then unplug it for 30 seconds. If the issue continues, please DM us your gamertag so we can investigate further. ^BL",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] That's great to hear! Enjoy the 4K experience and feel free to reach out if you need anything else. Happy gaming! ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@152374 Hi! For specific details on upgrade paths and pricing for disc versions, we'd recommend checking with the game publisher or the Microsoft Store directly. ^JM",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@115786 We're sorry you feel this way. If there's something specific we can help with, we're here to assist. ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Thanks for clarifying! Let's get this sorted. Can you DM us your Gamertag and which app is crashing so we can look into this further? ^JL",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@107664 Sorry to hear you're still having trouble after those steps. Let's take a closer look at this for you. Can you DM us your gamertag and the specific game title so we can investigate further? ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] The Enforcement team will review your case and respond via the email associated with your account. They'll provide details on their decision. You can check your case status here: https://enforcement.xbox.com ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] That's great to hear! We're always here if you need us. Happy gaming! ^JM",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] We'd like to look into this for you! Can you DM us with details on any error messages you're seeing when trying to redeem the gift card? ^KM",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@[username] Sorry to hear that! Let's get this sorted out. Can you send us a DM with more details about what's happening and which hardware you're using? We'll help troubleshoot from there. ^JM\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! Sorry to hear that. This error code usually indicates a game or app issue. Try these steps: 1) Quit the game completely 2) Power cycle your console 3) Check for game updates. If it persists, try reinstalling the game. Let us know if you need more help! ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@CustomerHandle We're sorry to hear about the party chat issues! Can you DM us with your gamertag and region so we can look into this further? In the meantime, check out our party chat troubleshooting guide here: https://t.co/XboxSupport ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! Sometimes orders can take a little while to show up. Try doing a hard reset on your console (hold power button for 10 seconds). If it still doesn't appear, our team can look into that order for you here: https://t.co/sMM0hn9ycL ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "howto_general",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! We'd be happy to help. Can you let us know what you need assistance with regarding your case? Keep in mind we're unable to assist with Enforcement cases, but we're here for other Xbox support needs. ^JL",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! Sorry to hear about that error code. We'd like to help get this sorted out for you. Can you follow us back and send us a DM with your Gamertag so we can look into this further? ^JX",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] Sorry to hear the factory resets didn't resolve the E105 error. At this point, you'll want to explore your repair/warranty options here: https://support.xbox.com/contact-us Let us know if you have any other questions! ^JM",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] We understand your frustration. For refund inquiries, please reach out to our team here: https://support.xbox.com/contact-us so we can look into your options and get this sorted out for you. ^JL",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! Let's help narrow this down. Can you run a network test on your console and share what speeds you're getting? Also check out https://t.co/pULGJT4zeS for troubleshooting steps that can help. ^JL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@117331 Oh no! That's frustrating. Let's look into this for you. Please follow us and send a DM with your Gamertag and details about what happened so we can help: https://t.co/nPX1yNXCi5 ^TC",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Sorry to hear about the gray screen issue! Let's get this sorted. Can you DM us with more details about when this started and if you've tried any troubleshooting steps? We'll help get your One Guide working again. ^JR",
+      "judge": {
+        "grounded": 3,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Thanks for the kind words! We're always here if you need us. ^JL",
+      "judge": {
+        "grounded": 5,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Thanks for clarifying! Are you experiencing an issue with purchasing or accessing content in Madden 17? Let us know more details so we can assist. ^JR",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@667953 @129009 We're sorry to hear about the delay with your controller issue. We'd like to help get this sorted out! Can you send us a DM with your service request or case number so we can look into this for you? We're here to assist in English, or you can reach local support here: https://t.co/LFZ7ig1llk ^QZ",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@NewCustomer Thanks for reaching out! Can you let us know what you need help with? We're here to assist you. ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Thanks for clarifying. To help further, can you let us know which game this is happening with and when you're getting kicked out? Also, are you on console or PC? ^XS",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! We haven't made any recent changes to party chat audio. If you're experiencing quality issues, try the steps here: https://t.co/E5H8Q4PnD0. Let us know if the issue continues! ^JM",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hey there! Let's try a power cycle - fully shut down your console, unplug it for 5 minutes, then plug it back in and restart. This should help! Let us know if you're still having trouble. ^TC",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@XboxSupport Awesome! Glad to hear everything's up and running for you. Enjoy! ^IS\"",
+      "judge": {
+        "grounded": 5,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Oh no! Let's get that sorted out for you. Can you send us a DM with more details about when the freezing happens? https://t.co/nPX1yNXCi5 ^QZ",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! We'd love to help out. Can you DM us your Gamertag and let us know what's happening so we can look into this for you? ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "We appreciate the enthusiasm for your new setup! However, we're unable to provide game codes as compensation. Keep an eye on Xbox Game Pass for great titles like Gears of War 4! ^MT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@505597 Oh no! Let's get that sorted. Try these steps to adjust your display settings: https://t.co/xbox-display-help If that doesn't help, we're here to assist further. ^KC\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@117331 The Xbox One X will still provide enhanced visuals like higher resolution, improved textures, and better performance even without HDR. You'll notice sharper graphics and smoother gameplay compared to the standard Xbox One. ^JS",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hi there! We'd be happy to help. Can you provide us with more details about what you're experiencing so we can better assist you? ^JA",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "howto_general",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@115786 Hi! We'd be happy to help you with that. Please reach out to our chat team here: https://t.co/lUV7XYl61S and they can assist with your preorder. ^JT\"",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "We're sorry to hear about your experience. We'd like to help get this sorted out for you. Can you send us a DM with more details about the issue you're facing with your subscription? We'll do our best to make this right. ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Sorry to hear that! Let's get you sorted. Can you DM us your gamertag, console serial number, and a pic of the controller showing any damage? We'll help you get it registered and look into replacement options. ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] We understand you're eager for the update! However, we don't have visibility into the certification timeline for specific game patches. We'd recommend checking with the game developer for updates on their patch status. ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] Hey there! We'd love to look into the pricing with you. Could you let us know your region and where you're seeing these prices? Follow & DM us so we can help clarify! ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] We'd like to help you get signed in. Please try these steps: https://t.co/XboxSignInHelp. If you're still not receiving the code, let's take this to DM so we can look into your account details. ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Thanks for confirming! This sounds like a profile sync issue. Can you try going to Settings>Account>Remove accounts, then sign back in? This should sync your profiles properly. Let us know if that helps! ^JM",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "account_signin",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! Sorry to hear about the trouble with your trial code. Can you DM us your Gamertag so we can take a closer look at your account status? ^JM",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] That's definitely not right. Let's get this sorted out. Can you DM us your Gamertag and which hard drive you're using so we can look into this further? ^JM",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! Let's get you back in. Can you follow us and send a DM with your Gamertag? We'll help you sort out that security code issue: https://t.co/nPX1yNXCi5 ^AJ",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "\"@[username] Thanks for trying those steps! Since the issue persists after a factory reset, let's get our team to investigate further. Can you DM us your Gamertag so we can look into this? ^TJ\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hi there! We'd be happy to help. Can you let us know what's going on so we can assist you? ^[Agent Initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! Sorry to hear about the lag. Let's get this sorted. Can you let us know if this is happening with a specific game or across multiple games? Also, have you tried a network test on your console? ^XS",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! We'd recommend reaching out to @EASPORTS directly for details on game-specific updates and Xbox One X enhancements for Madden 18. They'll have the latest info! ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@464300 Great question! The 4K assets will download to your external HDD when connected to your Xbox One X. When you switch it back to your Xbox One, those assets will simply be ignored and won't affect gameplay. ^JL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] That's great! Let us know if you have any questions about the new features or if there's anything we can help you with. ^JL",
+      "judge": {
+        "grounded": 2,
+        "helpful": 1,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@125833 Hey there! Sorry to hear you're having trouble loading those activities. Can you try a power cycle of your console and router, then let us know if the issue persists? ^JM",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! Let's get you back online. Can you DM us your gamertag? In the meantime, try power cycling your console and router - unplug both for 30 seconds, then reconnect. ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! We'd be happy to help clarify this for you. Can you send us more details about the free code you're expecting in a DM here? https://t.co/DioYGIau2R We'll get this sorted out! ^JL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! Sorry to hear your games are freezing. This guide should help you troubleshoot: https://t.co/ouleFwMwRs Let us know if you're still having trouble! ^AK",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Sorry to hear about the trouble with your game code! Let's get this sorted out. Can you try a hard reset on your console? (Hold power button for 10 sec, then restart) If the game still doesn't appear, reach out to our chat team here: https://t.co/lUV7XYl61S so they can investigate further. ^XS",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] No problem at all! Feel free to reach out whenever you're feeling better. Hope you feel better soon! ^[Agent Initials]",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@129141 Hey there! Can you let us know which game or service you're experiencing issues with? Our Xbox Live services are currently running smoothly, so we'd like to help narrow down what's happening. ^JL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! We'd like to look into this with you. Can you follow us and send a DM so we can gather more details? ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Hey there! We'd be happy to look into this with you. Can you please send us a DM with details about which game you purchased and what happens when you try to play it? We'll help sort this out. ^XS",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Sorry to hear you're experiencing this! Let's try a full power cycle of your console. Hold the power button for 10 seconds, wait 30 seconds, then power back on. Does this resolve the issue? ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! We'd like to look into this further for you. Can you DM us more details about which setting you're referring to and what's happening with your TV pass through? ^XS",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Let's try some troubleshooting steps. Have you tried a hard reset on your console? Hold the power button for 10 seconds until it shuts down, then restart. Also, is this happening with other disc games? ^JL",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@User Hi there! What's your question? We're here to help. ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Thanks for the heads up! We'll make sure the right team sees this. Is there anything we can help you with today? ^[initials]",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@Customer Oh no! We'd like to help you out with that error. Can you send us a DM with more details about what you're seeing and your Gamertag so we can look into this? ^BZ",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 3
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] We'd like to help look into this Edge issue. Can you DM us with more details about what's happening? Also, what console are you using? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Thanks for that info! Let's try plugging the console directly into a wall outlet instead of the power strip to see if that helps. Power strips can sometimes interfere with the power supply. Let us know how it goes! ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@[Customer] Sounds good! Let us know how it goes or if you need anything else. We're here to help! ^JM\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! Sorry to hear you're having trouble connecting to Xbox Live. We'd like to look into this with you. Can you send us a direct message with your Gamertag so we can investigate further? ^JR",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] We'd like to help! Can you provide a few more details about what you're experiencing so we can assist you better? ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hi there! We don't offer support via DM on Twitter. For account-specific issues, please reach out to our chat support team at https://support.xbox.com/contact-us. They'll be happy to help! ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hey there! We're glad we could help you out back then. Is there anything we can assist you with today? Feel free to let us know if you need support with anything else. ^XS",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hi! We'd be happy to help, but we're an English support channel. If you'd like to continue in English, please send us a DM https://t.co/nPX1yNXCi5 with details about the error you're seeing. ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] That's awesome! For licensing requests outside the Game Content Usage Rules, you'll want to reach out to our legal team here: https://www.xbox.com/legal/permissions. They can help with special permissions. ^JL",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@458574 We're sorry to hear about your experience. If you need help with anything specific, our support team is here for you: https://t.co/lUV7XYl61S ^ZM",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We appreciate your feedback! We're always listening to our community. If you have specific suggestions or concerns, feel free to send us a DM so we can share your input with the right team. ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hi there! Our services are showing all green on our end: https://t.co/PztuiO5zNQ. If you're still having trouble, try a power cycle on your console and router to refresh your connection. Let us know if that helps! ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! We'd like to help get this sorted out. Can you DM us which Xbox console and controller you're using, along with details on when the disconnects occur? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "Hey there! We'd be happy to help if you're experiencing an issue with Xbox. Can you let us know what's going on so we can assist? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "\"@120009 Thanks for checking that! Let's try a full power cycle - unplug your console for 5 minutes and make sure all cables are firmly connected. Let us know if that helps! ^JT\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We sincerely apologize for the delay in getting back to you. We work to respond to everyone as quickly as possible, but sometimes replies can be missed. Can you send us a DM so we can help you right away? https://t.co/nPX1yNG0Tv ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 3
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] Thanks for providing that info. Our Enforcement team has all the details they need from the report. They'll review and take appropriate action if violations are found. ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Thanks for confirming! Let's get this sorted out. Can you let us know what issue you're experiencing so we can help troubleshoot? ^TC",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@178026 We'd like to help get this sorted out for you! Please reach out to our chat team here https://t.co/lUV7XYl61S so we can look into your account and subscription access. ^JS",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] No worries! You can create a free Xbox account and gamertag to use on Windows 10 here: https://account.microsoft.com/account. Let us know if you need any help getting set up! ^JT",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@115786 Hi! Case reviews can take some time to complete as each one is looked at carefully. You'll receive an email once your review has been processed. Thanks for your patience! ^BL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hi there! We'd like to help! Can you send us a DM with more details about what's going on so we can assist you? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "Hey there! Sorry to hear about the crashes with Batman: Return to Arkham. Can you DM us your Gamertag and let us know if you're seeing any error messages when this happens? We'll help sort this out! ^XS",
+      "judge": {
+        "grounded": 1,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! We'd be happy to help! Can you let us know what's going on so we can point you in the right direction? ^JL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! We'd like to help. Can you describe the noise you're hearing? Is your console still working normally, or are you noticing any performance issues? ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@Customer Hey there! We'd like to help you out with this. Can you send us a DM with more details about when you're experiencing lag? We'll take a look!\n\n^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@769333 Haha, hopefully it won't come to that! Let us know if you need anything else. 👍 ^(initials)\"",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[User] We take all reports seriously and review them thoroughly. Enforcement actions aren't always visible to reporters, but we do act on valid violations. If you have concerns about a specific case, follow us and DM the details so we can look into it: https://t.co/nPX1yNXCi5 ^BL",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hi there! Sorry to hear about the download trouble. Let's try these steps to get your games downloading: https://t.co/[SupportLink] ^KL",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] That's odd! Let's take a closer look at this for you. Can you send us a DM with your Gamertag and let us know if you're seeing any specific error codes when you're getting logged out? We'll investigate further. ^JT",
+      "judge": {
+        "grounded": 5,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We'd like to help sort this out. Can you send us a direct message with more details about what's happening so we can look into this for you? ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hi there! We'd be happy to help. Can you follow us back & DM with more details about what you're experiencing? ^JL",
+      "judge": {
+        "grounded": 5,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] Oh no! That's definitely not right. Let's get this sorted out for you. Can you DM us the game title and we'll look into what happened with your purchase? ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Hi there! Pre-order bonuses can vary by game and retailer. Can you DM us which game and where you pre-ordered it? We'll help sort this out. ^RM",
+      "judge": {
+        "grounded": 5,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@Customer Sorry to hear that! AC Origins should definitely be showing up. Can you try a hard reset? Hold the power button for 10 seconds, then power back on. If it's still not appearing, follow & DM us your Gamertag so we can investigate further. ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! We'd be happy to help clarify. Are you referring to game updates, service issues, or something else with WW2? Can you DM us more details about what you're looking for? https://t.co/nPX1yNXCi5 ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "achievements_rewards",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hey there! We'd like to look into this with you. Can you please DM us your Gamertag and let us know which achievements aren't showing up on the leaderboard? ^XS",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "achievements_rewards",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@80492 Hi! Sorry to hear about the Daily Rewards streak issue. Can you try signing out completely, then back in to see if that refreshes it? If it persists, please report this via the console (Guide > Report a problem) so our team can investigate. ^JT",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@User Hi there! We don't have any reported issues at the moment. Are you experiencing a specific problem? You can check our status page here: https://support.xbox.com/xbox-live-status for real-time updates. ^CH",
+      "judge": {
+        "grounded": 5,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We're sorry to hear that! We'd like to help get this sorted out. Can you follow and DM us with your Gamertag and details about what's happening? ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@178902 Hi! Are you looking for recommendations or help finding specific games in the Store? Let us know what you need assistance with! ^BL",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 3
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Hi there! Let's look into this with you. Can you DM us your Gamertag and let us know what TV model you're using? We'll help sort this out. ^JM",
+      "judge": {
+        "grounded": 3,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[Customer] Oh no! We're sorry to hear that. What's happening with Forza? Let us know so we can help get you back in the game. ^TC",
+      "judge": {
+        "grounded": 2,
+        "helpful": 2,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[Customer] Hi there! Sorry to hear about the trouble with your pre-order. Let's take a look at this for you. Can you send us a DM with your gamertag and order details so we can investigate? ^JR",
+      "judge": {
+        "grounded": 5,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "@[username] Thanks for clarifying! Can you send us a screenshot of what you're seeing in your Order History? Also, try accessing Purchase History from https://account.microsoft.com/billing/orders to see if it loads consistently there. ^JT",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "@[username] We're sorry to hear about the delay with your repair. Please send us a DM with your service order number here: https://t.co/nPX1yNXCi5 so we can look into this for you right away. ^[initials]",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@[Customer] You're welcome! We've got your DM and will respond as soon as possible. ^JL\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 1,
+        "tone": 4
+      }
+    }
+  ],
+  "trivial": [
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    }
+  ],
+  "simple": [
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "achievements_rewards",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "network_service",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "billing_subscription",
+      "pred_intent": "howto_general",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "achievements_rewards",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "billing_subscription",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    }
+  ]
+}
