@@ -81,12 +81,11 @@ Two findings here matter more than the headline percentages. First, there is a *
 
 ## 5. What I'd do with one more week
 
-1. Get full independent human review of all 200 golden labels (currently AI-drafted plus partial author spot-check) to remove the circularity problem in section 4.
-2. Replace TF-IDF retrieval with sentence embeddings plus a similarity-gated fallback (see failure mode 3) to reduce confident hallucination on under-grounded cases.
-3. Add few-shot examples per intent to the classifier prompt, targeted at the game_app_crash/hardware_issue/howto_general confusion cluster (failure mode 4).
-4. Run a 4th escalation-prompt iteration with the specific goal of raising recall back toward 70-80% without re-collapsing precision; likely needs a structured rubric (checklist of escalate triggers scored independently) rather than one free-text prompt.
-5. Expand the golden set specifically with rare/high-stakes cases (harassment, safety, minors) that a random 200-sample likely underrepresents, since these matter disproportionately for a real auto-handle decision.
-6. ~~Measure LLM-judge agreement against human judgment~~ Done (see section 2); next step is recalibrating the judge prompt to reduce the systematic negative bias found, e.g. by anchoring the rubric with concrete examples of what a 5/5 vs 3/5 reply looks like for this brand, rather than leaving the scale to the judge's own interpretation.
+1. Replace TF-IDF retrieval with sentence embeddings plus a similarity-gated fallback (see failure mode 3) to reduce confident hallucination on under-grounded cases.
+2. Add few-shot examples per intent to the classifier prompt, targeted at the game_app_crash/hardware_issue/howto_general confusion cluster (failure mode 4).
+3. Run a 4th escalation-prompt iteration with the specific goal of raising recall back toward 70-80% without re-collapsing precision; likely needs a structured rubric (checklist of escalate triggers scored independently) rather than one free-text prompt.
+4. Expand the golden set specifically with rare/high-stakes cases (harassment, safety, minors) that a random 200-sample likely underrepresents, since these matter disproportionately for a real auto-handle decision.
+5.  next step is recalibrating the judge prompt to reduce the systematic negative bias found, e.g. by anchoring the rubric with concrete examples of what a 5/5 vs 3/5 reply looks like for this brand, rather than leaving the scale to the judge's own interpretation.
 
 ## 6. Reproduction
 
