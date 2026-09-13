@@ -1,0 +1,488 @@
+{
+  "pipeline": [
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Sorry to hear that the Fall Update didn't resolve the issue. Can you try resetting the game or checking for corrupted files? More troubleshooting steps here: https://support.xbox.com ^JK\"",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Sorry to hear that your Xbox One won't boot up. Try disconnecting all cables, waiting 30 seconds, and then reconnecting them. Also, ensure your console is getting enough power. If issues persist, you can try a factory reset using the Xbox Startup Troubleshooter: https://support.xbox.com/en-US/help/hardware-network/console/xbox-startup-troubleshooter ^JA\"",
+      "judge": {
+        "grounded": 3,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@302698 Sorry to see that! Can you please DM us with more details about the issue and your console's serial number so we can investigate? ^JK\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 3
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username We don't have a release date for Cortana in Australia to share at this time. You can submit feedback for future advancements in Xbox here: https://t.co/bKaMp0HcbU ^JS\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"Hi there! Final Fantasy XIV isn't currently available on Xbox One, but it is available on PC, PS4, and PS5. We don't have any info on a potential Xbox release. -JS\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 3
+      }
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Try restarting your Xbox & Kinect, then check the mic settings again. If issues persist, let's troubleshoot further: https://support.xbox.com/en-US/xbox-one/accessories/kinect-sensor-troubleshoot  ^RR\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "enforcement_ban",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "ESCALATE",
+      "reply": "\"To troubleshoot, can you try checking your account status and any pending enforcement actions on the Xbox website? ^JP\"",
+      "judge": {
+        "grounded": null,
+        "helpful": null,
+        "tone": null
+      }
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Check out our troubleshooting guide for common Xbox issues: https://t.co/XQI5vx1Sjt ^JS\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "purchase_store",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Check your storage settings to ensure you're looking at the correct drive. Also, try clearing local saved games & temp files to free up space. If issues persist, feel free to DM us! ^JL\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 4,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Hi there. Sorry to hear the SmartGlass app isn't working as expected. Can you please try restarting the app and your console, then try typing again? If issues persist, please DM us your Gamertag and more details. ^JS\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Sorry to hear you're having a frustrating experience. Can you please DM us with more details about the issue you're seeing so we can help? ^MS\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "account_signin",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Having trouble signing up to Xbox Live on your 360? DM us with more details and your Gamertag, we'll do our best to help you get back online  ^JP\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "achievements_rewards",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Can you please try checking the achievement status on the Xbox website or mobile app? Sometimes, they don't sync immediately. ^JS\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"Hi there, can you please DM us with more details about what's happening with your Xbox? We're here to help you troubleshoot ^JS\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 3,
+        "tone": 5
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@125833 Sorry to hear that the tank in Destiny 2 is having movement issues. Try restarting the game or checking for any pending updates. If issues persist, submit a ticket to Bungie support for further assistance. ^JS\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Let's check out the code troubleshooting guide on this link https://t.co/d3fbvoonAH Let us know how that goes. ^RR\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 3
+      }
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@[username] Sorry to hear that you didn't receive your preorder bonus. Can you please check your Xbox account orders to ensure the preorder was completed successfully? Also, try checking the in-game mailbox for any pending rewards. ^JS\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 3,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "game_app_crash",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Sorry to hear that! Can you try ejecting the disc, restarting your Xbox, and then re-inserting the disc to see if that resolves the issue? If not, please follow us and DM your GamerTag for further assistance ^QZ\"",
+      "judge": {
+        "grounded": 3,
+        "helpful": 4,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username Hi there, the QR code feature was removed from Xbox around a year ago. You can still download games from the Microsoft Store on your console or through the Xbox app on your mobile device. ^JK\"",
+      "judge": {
+        "grounded": 4,
+        "helpful": 5,
+        "tone": 4
+      }
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "hardware_issue",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE",
+      "reply": "\"@username If you're experiencing issues with the preview update, you can try rolling back to the previous version through the Xbox Insider Hub app. Check out this link for steps: https://support.xbox.com/en-US/help/xbox-one/system/xbox-insider-program ^JS\"",
+      "judge": {
+        "grounded": 2,
+        "helpful": 4,
+        "tone": 4
+      }
+    }
+  ],
+  "trivial": [
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "howto_general",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "howto_general",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "howto_general",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    }
+  ],
+  "simple": [
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "howto_general",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "hardware_issue",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "enforcement_ban",
+      "pred_intent": "noise_other",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "network_service",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "account_signin",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "achievements_rewards",
+      "pred_intent": "achievements_rewards",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "noise_other",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "purchase_store",
+      "pred_intent": "purchase_store",
+      "true_escalate": "ESCALATE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "game_app_crash",
+      "pred_intent": "noise_other",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    },
+    {
+      "true_intent": "howto_general",
+      "pred_intent": "network_service",
+      "true_escalate": "AUTO_HANDLE",
+      "pred_escalate": "AUTO_HANDLE"
+    }
+  ]
+}

@@ -19,6 +19,8 @@ OPENROUTER_MODEL=anthropic/claude-sonnet-4.5
 
 Get a key at [openrouter.ai](https://openrouter.ai). Any OpenRouter-hosted chat model works via `OPENROUTER_MODEL`.
 
+**Note on model used:** the headline results in `REPORT.md` (78.5% intent accuracy, escalation F1 ~51%, etc.) were generated with `anthropic/claude-sonnet-4.5`. The most recent testing in this repo, however, was done with `meta-llama/llama-3.3-70b-instruct` (open-source, ~10-20x cheaper per call) on a 20-example subsample to sanity-check the pipeline still runs correctly on a different model; see `data/eval_report_llama_trial.json` for those numbers. Results differ somewhat between models (expected, given they're different models), so if you're trying to reproduce the exact numbers in `REPORT.md`, set `OPENROUTER_MODEL=anthropic/claude-sonnet-4.5`.
+
 ## Reproduce the headline results (under 15 min)
 
 The full dataset (~3M tweets, 516MB) is not checked into this repo. All scripts below work on a small, already-included subsample so you don't need to re-download or re-process the full dataset to verify results.
@@ -68,8 +70,9 @@ scripts/
 data/
   xbox_threads.jsonl        23,235 reconstructed threads (included)
   golden_labeled.csv         200-example golden eval set: AI-drafted, human-reviewed (included)
-  eval_report.json           Latest eval run's summary metrics
+  eval_report.json           Latest eval run's summary metrics (Claude Sonnet, matches REPORT.md)
   eval_raw_results.json      Latest eval run's full per-example output (drafted replies, judge scores)
+  eval_report_llama_trial.json   20-example sanity-check run on meta-llama/llama-3.3-70b-instruct
 REPORT.md              Full writeup
 decision_log.md          10-15 non-obvious decisions and why
 ```
