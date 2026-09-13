@@ -85,7 +85,7 @@ Two findings here matter more than the headline percentages. First, there is a *
 2. Add few-shot examples per intent to the classifier prompt, targeted at the game_app_crash/hardware_issue/howto_general confusion cluster (failure mode 4).
 3. Run a 4th escalation-prompt iteration with the specific goal of raising recall back toward 70-80% without re-collapsing precision; likely needs a structured rubric (checklist of escalate triggers scored independently) rather than one free-text prompt.
 4. Expand the golden set specifically with rare/high-stakes cases (harassment, safety, minors) that a random 200-sample likely underrepresents, since these matter disproportionately for a real auto-handle decision.
-5.  next step is recalibrating the judge prompt to reduce the systematic negative bias found, e.g. by anchoring the rubric with concrete examples of what a 5/5 vs 3/5 reply looks like for this brand, rather than leaving the scale to the judge's own interpretation.
+5. Recalibrate the judge prompt to reduce the systematic negative bias found in the human-vs-judge agreement check (section 2), e.g. by anchoring the rubric with concrete examples of what a 5/5 vs 3/5 reply looks like for this brand, rather than leaving the scale to the judge's own interpretation.
 
 ## 6. Reproduction
 
